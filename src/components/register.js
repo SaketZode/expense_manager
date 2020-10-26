@@ -44,7 +44,7 @@ class Register extends Component {
         return(
             <div className="container-fluid" style={{width: 500, backgroundColor:"beige", marginTop:20}}>
                 <hr/>
-                <h2>Register New Username</h2>
+                <h2>Register New User</h2>
                 <hr/>
                 <form>
                     <label>First Name</label><input className='form-control' type='text' onChange={this.handleFname} value={this.state.firstname}/><br/>
