@@ -42,7 +42,7 @@ class Register extends Component {
 
     render() {
         return(
-            <div className="container-fluid" style={{width: 500, backgroundColor:"beige"}}>
+            <div className="container-fluid" style={{width: 500, backgroundColor:"beige", marginTop:20}}>
                 <h2>Register New Username</h2>
                 <div class="panel-group">
                     <div class="panel panel-default"></div>
@@ -57,7 +57,7 @@ class Register extends Component {
                     <input type='submit' value='SUBMIT' className='btn btn-primary'/>
                 </form>
                 <hr/>
-                </div>
+            </div>
         )
     }
 }

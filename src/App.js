@@ -6,11 +6,12 @@ import ContactUs from './components/contactus';
 import Register from './components/register';
 import Login from './components/login';
 
+
 function App() {
   return (
     <div className="App">
       <Router>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style={{marginBottom:0, fontSize:20}}>
           <Link class="navbar-brand" to="/">Expenses Manager</Link>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
