@@ -42,8 +42,11 @@ class Register extends Component {
 
     render() {
         return(
-            <div className="container">
-                <h1>Register</h1>
+            <div className="container-fluid" style={{width: 500, backgroundColor:"beige"}}>
+                <h2>Register New Username</h2>
+                <div class="panel-group">
+                    <div class="panel panel-default"></div>
+                </div>
                 <form>
                     <label>First Name</label><input className='form-control' type='text' onChange={this.handleFname} value={this.state.firstname}/><br/>
                     <label>Last Name</label><input className='form-control' type='text' onChange={this.handleLname} value={this.state.lastname}/><br/>
@@ -51,10 +54,10 @@ class Register extends Component {
                     <label>Email</label><input className='form-control' type='email' onChange={this.handleEmail} value={this.state.email}/><br/>
                     <label>Password</label><input className='form-control' type='password' onChange={this.handlePassword} value={this.state.password}/><br/>
                     
-                    <br/>
                     <input type='submit' value='SUBMIT' className='btn btn-primary'/>
-                </form>   
-            </div>
+                </form>
+                <hr/>
+                </div>
         )
     }
 }
