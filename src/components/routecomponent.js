@@ -7,7 +7,6 @@ import Register from './register'
 import Login from './login'
 import history from '../history'
 
-
 class RouteComponent extends Component {
     render() {
         return(
