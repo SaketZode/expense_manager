@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import history from "../history"
 
 
 class Login extends Component {
@@ -6,22 +7,27 @@ class Login extends Component {
         email : '',
         password : ''
     }
+
+    handleLogin = () => {
+        history.push('/welcome')
+    }
+
     render() {
         return(
-            <div className="container-fluid" style={{width: 500, backgroundColor:"beige", marginTop:20}}>
-                <hr/>
+            <div className="jumbotron col-sm-5" style={{margin: 'auto'}}>
                 <h2>Login Credentials</h2>
                 <hr/>
                 <div class="panel-group">
                     <div class="panel panel-default"></div>
                 </div>
                 <form>
-                    <label>Email</label><input className='form-control' type='email' onChange={this.handleEmail} value={this.state.email}/><br/>
-                    <label>Password</label><input className='form-control' type='password' onChange={this.handlePassword} value={this.state.password}/><br/>
+                    <label>Email</label>
+                    <input className='form-control' type='email' onChange={this.handleEmail} value={this.state.email}/><br/>
+                    <label>Password</label>
+                    <input className='form-control' type='password' onChange={this.handlePassword} value={this.state.password}/><br/>
                     
-                    <input type='submit' value='Login' className='btn btn-primary'/>
+                    <input type='submit' value='Login' onClick={this.handleLogin} className='btn btn-primary'/>
                 </form>
-                <hr/>
             </div>
         )
     }

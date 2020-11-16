@@ -42,20 +42,23 @@ class Register extends Component {
 
     render() {
         return(
-            <div className="container-fluid" style={{width: 500, backgroundColor:"beige", marginTop:20}}>
-                <hr/>
+            <div className="jumbotron col-sm-5" style={{margin:'auto'}}>
                 <h2>Register New User</h2>
                 <hr/>
                 <form>
-                    <label>First Name</label><input className='form-control' type='text' onChange={this.handleFname} value={this.state.firstname}/><br/>
-                    <label>Last Name</label><input className='form-control' type='text' onChange={this.handleLname} value={this.state.lastname}/><br/>
-                    <label>Username</label><input className='form-control' type='text' onChange={this.handleUsername} value={this.state.username}/><br/>
-                    <label>Email</label><input className='form-control' type='email' onChange={this.handleEmail} value={this.state.email}/><br/>
-                    <label>Password</label><input className='form-control' type='password' onChange={this.handlePassword} value={this.state.password}/><br/>
+                    <label className="col-form-label">First Name</label>
+                    <input className='form-control' type='text' onChange={this.handleFname} value={this.state.firstname}/><br/>
+                    <label className="col-form-label">Last Name</label>
+                    <input className='form-control' type='text' onChange={this.handleLname} value={this.state.lastname}/><br/>
+                    <label className="col-form-label">Username</label>
+                    <input className='form-control' type='text' onChange={this.handleUsername} value={this.state.username}/><br/>
+                    <label className="col-form-label">Email</label>
+                    <input className='form-control' type='email' onChange={this.handleEmail} value={this.state.email}/><br/>
+                    <label className="col-form-label">Password</label>
+                    <input className='form-control' type='password' onChange={this.handlePassword} value={this.state.password}/><br/>
                     
                     <input type='submit' value='SUBMIT' className='btn btn-primary'/>
                 </form>
-                <hr/>
             </div>
         )
     }

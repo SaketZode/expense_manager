@@ -5,6 +5,7 @@ import AboutUs from './aboutus'
 import ContactUs from './contactus'
 import Register from './register'
 import Login from './login'
+import SideBar from './sidebar'
 import history from '../history'
 
 class RouteComponent extends Component {
@@ -18,6 +19,7 @@ class RouteComponent extends Component {
                         <Route exact path='/contactus' component={ContactUs}/>
                         <Route exact path='/register' component={Register}/>
                         <Route exact path='/login' component={Login}/>
+                        <Route exact path='/welcome' component={SideBar}/>
                     </Switch>
                 </Router>
             </div>

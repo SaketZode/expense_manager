@@ -11,14 +11,14 @@ class SideBar extends Component {
         return(
             <div>
                 <Router>
-                    <div class="sidebar">
-                        <Link class="active" to="newentry">Add New Entry</Link>
+                    <div className="sidebar">
+                        <Link to="newentry">Add New Entry</Link>
                         <Link to="report">Get Report</Link>
                         <Link to="monthlyreport">Get Monthly Report</Link>
                         <Link to="udhari">Udhaari</Link>
                     </div>
 
-                    <div class="content">
+                    <div className="content">
                         <Switch>
                             <Route exact path='/newentry' component={NewExpenseEntry}/>
                             <Route exact path='/report' component={Report}/>

@@ -11,7 +11,7 @@ function App() {
         <div>
             <RouteComponent />
         </div>
-      </div>
+    </div>
   );
 }
 
